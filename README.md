@@ -26,3 +26,4 @@ docker run -v "$PWD"/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql -v labo
 ```bash
 docker run --network=laborator1-db-network -e PGUSER=admin -e PGPASSWORD=admin -e PGDATABASE=books -e PGHOST=laborator1-db -e PGPORT=5432 --name laborator1-api -p 5555:80 api-laborator-1-image
 ```
+- serviciul ruleaza la urmatoarea adresa: http://localhost:5555/app/books
